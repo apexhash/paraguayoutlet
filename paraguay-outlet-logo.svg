@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Paraguay Outlet</title>
+  <desc id="desc">Emblema circular que combina las banderas de Paraguay y Estados Unidos en rojo, blanco y azul.</desc>
+  <defs>
+    <clipPath id="badge"><circle cx="256" cy="256" r="210"/></clipPath>
+    <clipPath id="usFlag"><rect x="46" y="46" width="210" height="420"/></clipPath>
+    <clipPath id="pyFlag"><rect x="256" y="46" width="210" height="420"/></clipPath>
+    <g id="star" fill="#fff">
+      <path d="m0-9 2.1 6.4 6.7.1-5.4 4 2 6.5L0 3.1l-5.4 3.9 2-6.5-5.4-4 6.7-.1z"/>
+    </g>
+  </defs>
+  <circle cx="256" cy="256" r="232" fill="#fff"/>
+  <circle cx="256" cy="256" r="222" fill="#173b8f"/>
+  <g clip-path="url(#badge)">
+    <g clip-path="url(#usFlag)">
+      <rect x="46" y="46" width="210" height="420" fill="#fff"/>
+      <path fill="#c8203d" d="M46 46h210v32.31H46zm0 64.62h210v32.3H46zm0 64.61h210v32.31H46zm0 64.61h210v32.31H46zm0 64.61h210v32.31H46zm0 64.62h210v32.3H46zm0 64.61h210v32.31H46z"/>
+      <rect x="46" y="46" width="84" height="226" fill="#173b8f"/>
+      <g>
+        <use href="#star" x="60" y="62"/><use href="#star" x="88" y="62"/><use href="#star" x="116" y="62"/>
+        <use href="#star" x="74" y="88"/><use href="#star" x="102" y="88"/>
+        <use href="#star" x="60" y="114"/><use href="#star" x="88" y="114"/><use href="#star" x="116" y="114"/>
+        <use href="#star" x="74" y="140"/><use href="#star" x="102" y="140"/>
+        <use href="#star" x="60" y="166"/><use href="#star" x="88" y="166"/><use href="#star" x="116" y="166"/>
+        <use href="#star" x="74" y="192"/><use href="#star" x="102" y="192"/>
+        <use href="#star" x="60" y="218"/><use href="#star" x="88" y="218"/><use href="#star" x="116" y="218"/>
+      </g>
+    </g>
+    <g clip-path="url(#pyFlag)">
+      <rect x="256" y="46" width="210" height="140" fill="#c8203d"/>
+      <rect x="256" y="186" width="210" height="140" fill="#fff"/>
+      <rect x="256" y="326" width="210" height="140" fill="#173b8f"/>
+      <circle cx="361" cy="256" r="30" fill="#fff"/>
+      <circle cx="361" cy="256" r="23" fill="#173b8f"/>
+      <circle cx="361" cy="256" r="16" fill="#c8203d"/>
+      <circle cx="361" cy="256" r="8" fill="#fff"/>
+    </g>
+    <path d="M256 46v420" stroke="#fff" stroke-width="8"/>
+  </g>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#fff" stroke-width="8"/>
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#173b8f" stroke-width="12"/>
+</svg>

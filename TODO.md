@@ -13,8 +13,8 @@
 ## Promociones, contacto e identidad social
 - [x] Añadir secciones promocionales para novedades, productos destacados y ofertas del outlet.
 - [x] Mostrar información de contacto, redes sociales y acceso visible a consultas o pedidos; incluir un botón grande y llamativo que abra el enlace directo de WhatsApp `https://wa.me/595971813022`.
-- [x] Sustituir el logo dorado por una identidad de Paraguay Outlet en blanco, rojo y azul, integrando referencias visibles a las banderas de Paraguay y Estados Unidos en el favicon, encabezado y pie.
-- [x] Crear dos imágenes sociales coordinadas y sin tonos dorados: una cuadrada lista para el perfil de Instagram y una portada panorámica para Facebook, ambas con referencias a las dos banderas y la paleta blanca, roja y azul.
+- [x] Rediseñar el logo de Paraguay Outlet para que sea más elegante, profesional e impactante, manteniendo los colores blanco, rojo y azul y las referencias a las banderas de Paraguay y Estados Unidos; integrarlo en el favicon, encabezado y pie.
+- [x] Crear imágenes sociales coherentes con el nuevo logo y la paleta blanca, roja y azul, sin tonos dorados: avatar cuadrado para Instagram y portada panorámica para Facebook.
 
 ## Entrega portable
 - [x] Mantener una estructura estática y portable, con todos los archivos del sitio ubicados en el mismo nivel que `index.html`, sin carpetas de assets, para facilitar la publicación en GitHub.

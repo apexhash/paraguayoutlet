@@ -9,7 +9,7 @@
   <meta property="og:site_name" content="Paraguay Outlet">
   <meta property="og:title" content="Paraguay Outlet — Estilo en movimiento">
   <meta property="og:description" content="Moda, marcas y accesorios en una experiencia de compra diferente. Consultá por WhatsApp.">
-  <link rel="icon" href="./paraguay-outlet-logo.svg" type="image/svg+xml">
+  <link rel="icon" href="./paraguay-outlet-logo-icon.png" type="image/png" sizes="512x512">
   <title>Paraguay Outlet — Estilo en movimiento</title>
   <style>
     :root {
@@ -73,10 +73,8 @@
       backdrop-filter: blur(18px);
     }
     .nav-row { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-    .brand-lockup { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; }
-    .brand-lockup img { width: 47px; height: 47px; object-fit: contain; border-radius: 50%; border: 0; filter: drop-shadow(0 0 8px rgba(23,59,143,.3)); }
-    .brand-name { display: grid; line-height: 1; gap: 4px; font-size: 12px; letter-spacing: .19em; font-weight: 850; }
-    .brand-name small { color: var(--brand-white); font-size: 9px; letter-spacing: .43em; font-weight: 700; }
+    .brand-lockup { display: inline-flex; align-items: center; min-width: max-content; padding: 5px 9px; border-radius: 11px; background: #fff; }
+    .brand-lockup img { width: auto; height: 46px; object-fit: contain; border-radius: 0; border: 0; filter: none; }
     .nav-links { display: flex; align-items: center; gap: clamp(17px, 3vw, 42px); }
     .nav-links a { color: rgba(255,255,255,.73); font-size: 12px; font-weight: 600; transition: color .2s ease; }
     .nav-links a:hover, .nav-links a:focus-visible { color: var(--brand-white); }
@@ -247,8 +245,8 @@
 
     footer { padding: 24px 0 32px; background: #0c0d0b; color: rgba(255,255,255,.55); }
     .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .footer-brand { display: inline-flex; align-items: center; gap: 10px; color: white; font-size: 11px; font-weight: 800; letter-spacing: .15em; }
-    .footer-brand img { width: 31px; height: 31px; border-radius: 50%; object-fit: contain; }
+    .footer-brand { display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 9px; background: #fff; }
+    .footer-brand img { width: auto; height: 32px; object-fit: contain; }
     .footer-note { max-width: 500px; margin: 0; text-align: right; font-size: 9px; line-height: 1.6; }
     .footer-note strong { color: var(--brand-white); }
     .wa-floating {
@@ -274,9 +272,7 @@
       .wrap { width: min(calc(100% - 32px), var(--max)); }
       .announcement { font-size: 8px; letter-spacing: .1em; }
       .nav-row { min-height: 68px; gap: 12px; }
-      .brand-lockup img { width: 40px; height: 40px; }
-      .brand-name { font-size: 10px; }
-      .brand-name small { font-size: 8px; }
+      .brand-lockup img { height: 38px; }
       .menu-toggle { display: block; margin-left: auto; }
       .nav-contact { min-height: 40px; padding: 0 12px; font-size: 10px; }
       .nav-contact .wa-icon { width: 16px; height: 16px; }
@@ -345,8 +341,7 @@
   <header class="topbar">
     <div class="wrap nav-row">
       <a class="brand-lockup" href="#inicio" aria-label="Paraguay Outlet, ir al inicio">
-        <img src="./paraguay-outlet-logo.svg" alt="" width="47" height="47">
-        <span class="brand-name">PARAGUAY<small>OUTLET</small></span>
+        <img src="./paraguay-outlet-logo-principal.png" alt="Paraguay Outlet" width="2526" height="654">
       </a>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
       <nav class="nav-links" id="primary-nav" aria-label="Navegación principal">
@@ -430,31 +425,31 @@
         <div class="product-grid" id="product-grid">
           <article class="product-card" data-category="remeras" data-brand="Calvin Klein" data-search="calvin klein essential white tee remera blanca camiseta">
             <div class="product-visual"><img src="./calvin-klein-tee.webp" alt="Camiseta blanca Calvin Klein en fotografía editorial" loading="lazy" width="1280" height="1600"><span class="product-badge">Esencial</span><span class="product-index">01 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Calvin Klein</span><span class="type">Remera</span></div><h3>Essential White Tee</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 289.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Essential White Tee · Calvin Klein" aria-label="Consultar por Essential White Tee en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Calvin Klein</span><span class="type">Remera</span></div><h3>Essential White Tee</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 239.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Essential White Tee · Calvin Klein" aria-label="Consultar por Essential White Tee en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="remeras" data-brand="Tommy Hilfiger" data-search="tommy hilfiger graphic tee navy remera azul camiseta">
             <div class="product-visual"><img src="./tommy-hilfiger-tee.webp" alt="Remera azul marino Tommy Hilfiger con gráfico frontal" loading="lazy" width="418" height="561"><span class="product-badge">Color esencial</span><span class="product-index">02 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Tommy Hilfiger</span><span class="type">Remera</span></div><h3>Graphic Tee Navy</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 269.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Graphic Tee Navy · Tommy Hilfiger" aria-label="Consultar por Graphic Tee Navy en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Tommy Hilfiger</span><span class="type">Remera</span></div><h3>Graphic Tee Navy</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 245.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Graphic Tee Navy · Tommy Hilfiger" aria-label="Consultar por Graphic Tee Navy en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="polos" data-brand="Abercrombie & Fitch" data-search="abercrombie fitch signature polo pack polos">
             <div class="product-visual"><img class="contain" src="./abercrombie-polo-pack.webp" alt="Selección demostrativa de polos Abercrombie en distintos colores" loading="lazy" width="600" height="750"><span class="product-badge">Signature</span><span class="product-index">03 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Abercrombie &amp; Fitch</span><span class="type">Polo</span></div><h3>Signature Polo Selection</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 429.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Signature Polo Selection · Abercrombie & Fitch" aria-label="Consultar por Signature Polo Selection en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Abercrombie &amp; Fitch</span><span class="type">Polo</span></div><h3>Signature Polo Selection</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 250.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Signature Polo Selection · Abercrombie & Fitch" aria-label="Consultar por Signature Polo Selection en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="shorts" data-brand="Polo Ralph Lauren" data-search="polo ralph lauren chino short short pantalón corto">
             <div class="product-visual"><img src="./polo-ralph-lauren-shorts.webp" alt="Short chino Polo Ralph Lauren en tono azul marino" loading="lazy" width="1333" height="1600"><span class="product-badge">Weekend edit</span><span class="product-index">04 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Short</span></div><h3>Chino Short Classic</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 389.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Chino Short Classic · Polo Ralph Lauren" aria-label="Consultar por Chino Short Classic en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Short</span></div><h3>Chino Short Classic</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 249.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Chino Short Classic · Polo Ralph Lauren" aria-label="Consultar por Chino Short Classic en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="pantalones" data-brand="Paraguay Outlet" data-search="pantalón everyday casual pantalones outfit">
             <div class="product-visual"><img src="./pantalon-everyday.webp" alt="Look de moda casual con pantalón de tono tierra" loading="lazy" width="1200" height="1600"><span class="product-badge">Daily fit</span><span class="product-index">05 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Paraguay Outlet</span><span class="type">Pantalón</span></div><h3>Everyday Casual Trouser</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 359.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Everyday Casual Trouser · Paraguay Outlet" aria-label="Consultar por Everyday Casual Trouser en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Paraguay Outlet</span><span class="type">Pantalón</span></div><h3>Everyday Casual Trouser</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 247.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Everyday Casual Trouser · Paraguay Outlet" aria-label="Consultar por Everyday Casual Trouser en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="accesorios" data-brand="Polo Ralph Lauren" data-search="polo ralph lauren medias sport calcetines socks">
             <div class="product-visual"><img class="contain" src="./polo-ralph-lauren-socks.webp" alt="Medias deportivas Polo Ralph Lauren en distintos tonos" loading="lazy" width="1200" height="900"><span class="product-badge">Everyday essential</span><span class="product-index">06 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Medias</span></div><h3>Sport Crew Socks</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 99.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Sport Crew Socks · Polo Ralph Lauren" aria-label="Consultar por Sport Crew Socks en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Medias</span></div><h3>Sport Crew Socks</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 235.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Sport Crew Socks · Polo Ralph Lauren" aria-label="Consultar por Sport Crew Socks en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
           <article class="product-card" data-category="accesorios" data-brand="Polo Ralph Lauren" data-search="polo ralph lauren kepi gorra cap baseball">
             <div class="product-visual"><img class="contain" src="./polo-ralph-lauren-kepi.webp" alt="Kepi azul marino Polo Ralph Lauren" loading="lazy" width="900" height="900"><span class="product-badge">Finishing touch</span><span class="product-index">07 / 07</span></div>
-            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Kepi</span></div><h3>Chino Baseball Cap</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 279.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Chino Baseball Cap · Polo Ralph Lauren" aria-label="Consultar por Chino Baseball Cap en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+            <div class="product-info"><div class="product-meta"><span>Polo Ralph Lauren</span><span class="type">Kepi</span></div><h3>Chino Baseball Cap</h3><div class="product-bottom"><div><span class="price-label">Precio de muestra</span><span class="product-price">Gs. 238.000</span></div><a class="product-ask" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" data-product-link="Chino Baseball Cap · Polo Ralph Lauren" aria-label="Consultar por Chino Baseball Cap en WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
           </article>
         </div>
         <div class="empty-state" id="empty-state" hidden><strong>Esta selección sigue creciendo.</strong><span>Consultanos por WhatsApp para preguntar por otras marcas o categorías.</span><br><a href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer">Consultar disponibilidad ↗</a></div>
@@ -490,7 +485,7 @@
   </main>
 
   <footer>
-    <div class="wrap footer-row"><a class="footer-brand" href="#inicio"><img src="./paraguay-outlet-logo.svg" alt="" width="31" height="31">PARAGUAY OUTLET</a><p class="footer-note"><strong>Catálogo de demostración.</strong> Las fotografías, precios y productos son ilustrativos; confirma disponibilidad y precio real por WhatsApp.</p></div>
+    <div class="wrap footer-row"><a class="footer-brand" href="#inicio" aria-label="Paraguay Outlet, volver al inicio"><img src="./paraguay-outlet-logo-principal.png" alt="" width="2526" height="654"></a><p class="footer-note"><strong>Catálogo de demostración.</strong> Las fotografías, precios y productos son ilustrativos; confirma disponibilidad y precio real por WhatsApp.</p></div>
   </footer>
 
   <a class="wa-floating" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" aria-label="Escribir ahora a Paraguay Outlet por WhatsApp">

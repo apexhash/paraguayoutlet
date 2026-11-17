@@ -13,15 +13,15 @@ Las piezas sociales mantienen la paleta blanca, roja y azul y no usan tonos dora
 
 ## Antes de usarla como tienda real
 
-- Los siete importes de las tarjetas son **precios de muestra**, variados entre **Gs. 235.000 y Gs. 250.000**. Actualízalos con tus precios reales y verifica talles, colores y disponibilidad.
+- Los diecisiete importes de las tarjetas son **precios de muestra**, variados entre **Gs. 235.000 y Gs. 389.000**. Actualízalos con tus precios reales y verifica talles, colores y disponibilidad.
 - El botón principal, el acceso flotante y las consultas de producto abren directamente [WhatsApp Paraguay Outlet](https://wa.me/595971813022). Los botones de cada prenda preparan una pregunta con el nombre del producto.
 - En el pie se muestran Instagram, TikTok y Facebook como redes de la tienda, pero todavía no enlazan a perfiles específicos porque no se proporcionaron las URL de usuario. Añade tus enlaces reales en `index.html` cuando los tengas.
-- Las fotos de producto son material ilustrativo recopilado en una búsqueda de imágenes y algunas provienen de las fotos de producto de esta conversación. Verifica los derechos de uso comercial o reemplázalas por fotografías propias antes de operar la tienda públicamente.
+- Las fotos de producto son las nuevas imágenes proporcionadas por la tienda (17 prendas). Las marcas mostradas se asignaron según los logos visibles; verifica que coincidan con tu stock.
 - No incluye pagos, inventario conectado ni gestión de pedidos; es un escaparate visual de demostración.
 
 ## Imágenes de productos
 
-Las fotos de muestra están en la raíz: `hero-ck-3d.webp`, `calvin-klein-tee.webp`, `tommy-hilfiger-tee.webp`, `abercrombie-polo-pack.webp`, `polo-ralph-lauren-shorts.webp`, `pantalon-everyday.webp`, `polo-ralph-lauren-socks.webp` y `polo-ralph-lauren-kepi.webp`.
+Las fotos están en la raíz en formato WebP optimizado (1000 px de ancho): `ck-*.webp` (Calvin Klein), `oakley-*.webp`, `boardshort-*.webp` y `remera-*.webp`. El logo del encabezado y el pie usa `paraguay-outlet-logo-web.webp`; el PNG grande se conserva para uso en redes e impresión.
 
 `manus-routes.json` sirve para declarar la ruta de vista previa de Manus; no es necesario para GitHub Pages. `manus-webdev.json` es metadato del proyecto Manus y se excluye del paquete portable para GitHub.
 

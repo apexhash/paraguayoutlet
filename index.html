@@ -54,7 +54,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(5,8,20,.72);backdrop-fil
 .tag i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red)}
 .stage{position:relative;justify-self:center;width:min(100%,430px)}
 .arch{position:relative;aspect-ratio:.8;border-radius:50% 50% 36px 36px/26% 26% 36px 36px;background:#10162f}
-.arch img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:inherit}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:inherit}
 .ring{position:absolute;inset:-4px;border-radius:inherit;padding:4px;background:conic-gradient(from var(--a),var(--cobalt),#fff,var(--red),var(--cobalt));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 7s linear infinite;filter:drop-shadow(0 0 18px rgba(47,91,255,.7))}
 @keyframes spin{to{--a:360deg}}
 .float{position:absolute;left:-8%;bottom:9%;display:flex;flex-direction:column;padding:14px 18px;border:1px solid rgba(255,255,255,.22);border-radius:18px;background:rgba(8,12,30,.62);backdrop-filter:blur(14px);box-shadow:0 20px 50px rgba(0,0,0,.45)}
@@ -92,10 +92,32 @@ h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(28px,4.2v
 .card:hover::after{opacity:1}
 .ph{position:relative;aspect-ratio:.8;background:#e8edf7}
 .ph img{width:100%;height:100%;object-fit:cover}
-.ph img{cursor:zoom-in}
-dialog{padding:0;border:0;background:transparent;max-width:min(92vw,640px);overflow:visible}
-dialog::backdrop{background:rgba(3,5,14,.88);backdrop-filter:blur(10px)}
-dialog img{width:100%;max-height:90vh;object-fit:contain;border-radius:20px;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.ph{cursor:pointer}
+dialog{padding:0;border:1px solid var(--line);border-radius:28px;background:#0b1233;color:var(--ice);width:min(94vw,860px);max-height:92vh;overflow:auto}
+dialog::backdrop{background:rgba(3,5,14,.82);backdrop-filter:blur(8px)}
+.x{position:absolute;top:12px;right:12px;z-index:2;width:40px;height:40px;border:0;border-radius:50%;background:rgba(5,8,20,.7);color:#fff;font-size:22px;cursor:pointer}
+.qw{position:relative;display:grid;grid-template-columns:1fr 1fr}
+#qm{width:100%;aspect-ratio:.8;object-fit:cover}
+.th{display:flex;gap:8px;padding:10px}.th button{width:56px;padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;opacity:.6;cursor:pointer;background:none}.th button.on{border-color:var(--cobalt);opacity:1}.th img{aspect-ratio:.8;object-fit:cover}
+.qi{display:flex;flex-direction:column;gap:14px;padding:32px 28px}
+.qi h3{margin:0;font-size:24px;letter-spacing:-.03em}.qi small{color:var(--steel);font-weight:700}
+.pr{font-family:var(--display);font-weight:400;font-size:20px}
+details{color:#b9c4e4;font-size:14px}summary{cursor:pointer;font-weight:700;color:#fff}
+.ok{min-height:20px;color:var(--wa)}
+.cw{padding:24px}.cwh{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.cwh h3{margin:0;font-family:var(--display);font-weight:600;font-size:22px}.cwh .x{position:static}
+.ci{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}.ci img{width:76px;aspect-ratio:.8;object-fit:cover;border-radius:12px}.ci>div{flex:1}.ci small{display:block;color:var(--steel)}
+.cr{display:flex;justify-content:space-between;gap:10px;margin-top:8px}
+select{min-height:36px;padding:0 8px;border:1px solid var(--line);border-radius:10px;background:#10162f;color:#fff}
+.qt{display:inline-flex;align-items:center;gap:10px}.qt button{width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:transparent;color:#fff;cursor:pointer}
+.tt{display:flex;justify-content:space-between;padding:16px 0}.cw .btn{width:100%}.e0{color:var(--steel)}
+.cartb{position:fixed;z-index:30;left:20px;bottom:20px;min-height:54px;padding:0 20px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(8,12,30,.88);backdrop-filter:blur(14px);color:#fff;font-weight:800;cursor:pointer;box-shadow:0 12px 38px rgba(0,0,0,.5)}
+.cartb b{display:inline-grid;place-items:center;min-width:24px;height:24px;margin-left:8px;border-radius:12px;background:var(--cobalt);font-size:12px}
+.mf{position:absolute;top:12px;right:12px;padding:6px 12px;border-radius:999px;background:rgba(47,91,255,.85);color:#fff;font-size:12px;font-weight:700}
+.looks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.look{overflow:hidden;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02))}
+.lp{display:grid;grid-template-columns:1fr 1fr}.lp img{width:100%;aspect-ratio:.8;object-fit:cover}
+.li{padding:20px}.li h3{margin:0 0 6px;font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:-.03em}.li p{margin:0 0 16px;color:var(--steel);font-size:14px}
+.lt{display:flex;justify-content:space-between;align-items:end;gap:12px;font-size:12px;color:var(--steel)}.lt strong{color:#fff;font-size:15px;font-family:var(--display);font-weight:400}.lt .btn{min-height:44px;padding:0 16px}
 .ph img.ct{object-fit:contain;padding:18px}
 .bd{position:absolute;top:12px;left:12px;padding:6px 12px;border-radius:999px;background:rgba(5,8,20,.78);backdrop-filter:blur(8px);color:#fff;font-size:12px;font-weight:700}
 .info{padding:16px 18px 18px}
@@ -105,8 +127,8 @@ dialog img{width:100%;max-height:90vh;object-fit:contain;border-radius:20px;box-
 .bt{display:flex;align-items:end;justify-content:space-between;gap:10px;padding-top:14px;border-top:1px solid var(--line)}
 .bt small{display:block;color:var(--steel);font-size:11px}
 .bt strong{font-family:var(--display);font-weight:400;font-size:15px}
-.ask{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:rgba(47,91,255,.2);border:1px solid rgba(91,125,255,.6);transition:all .2s}
-.ask:hover{background:var(--wa);border-color:var(--wa);color:#04210f;transform:rotate(-35deg)}
+.ask{cursor:pointer;color:#fff;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:rgba(47,91,255,.2);border:1px solid rgba(91,125,255,.6);transition:all .2s}
+.ask:hover{background:var(--cobalt);border-color:var(--cobalt);transform:rotate(90deg)}
 .empty{padding:56px 20px;border:1px dashed var(--line);border-radius:22px;color:var(--steel);text-align:center}
 .empty[hidden]{display:none}
 .empty strong{display:block;margin-bottom:6px;color:#fff;font-size:20px}
@@ -152,7 +174,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--steel);f
 .card h3{font-size:14px;min-height:38px}.bt strong{font-size:12px}.ask{width:36px;height:36px}
 .panel{grid-template-columns:1fr;border-radius:26px}
 .frow{flex-direction:column;align-items:flex-start}.frow p{text-align:left}
-.fab{right:12px;bottom:12px}
+.fab{right:12px;bottom:12px}.cartb{left:12px;bottom:12px}.qw{grid-template-columns:1fr}.looks{grid-template-columns:1fr}#qm{max-height:58vh}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition-duration:.01ms!important}.in{opacity:1;transform:none}}
 </style>
@@ -160,13 +182,13 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--steel);f
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M20.52 3.48A11.82 11.82 0 0 0 12.1 0C5.55 0 .22 5.33.22 11.88c0 2.1.55 4.15 1.6 5.96L.12 24l6.32-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.15-3.47-8.42ZM12.1 21.76a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.75.98 1-3.66-.24-.38a9.83 9.83 0 0 1-1.51-5.23c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7.01 2.91 9.83 9.83 0 0 1 2.89 7.01c0 5.45-4.44 9.89-9.9 9.89Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.1 4.5.71.3 1.26.49 1.69.62.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/></symbol>
-<symbol id="go" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 5l7 7-7 7"/></symbol>
+<symbol id="go" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 5v14M5 12h14"/></symbol>
 </defs></svg>
 
 <header><div class="wrap nav">
 <a class="logo" href="#inicio" aria-label="Paraguay Outlet, ir al inicio"><img src="./paraguay-outlet-logo-web.webp" alt="Paraguay Outlet" width="600" height="155"></a>
 <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
-<nav class="links" id="links" aria-label="Navegación principal"><a href="#coleccion">Colección</a><a href="#marcas">Marcas</a><a href="#sobre">Nosotros</a><a href="#contacto">Contacto</a></nav>
+<nav class="links" id="links" aria-label="Navegación principal"><a href="#coleccion">Colección</a><a href="#looks">Looks</a><a href="#marcas">Marcas</a><a href="#sobre">Nosotros</a><a href="#contacto">Contacto</a></nav>
 <a class="btn btn-wa" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="ico" aria-hidden="true"><use href="#wa"/></svg><span>WhatsApp</span></a>
 </div></header>
 
@@ -181,8 +203,8 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--steel);f
 <a class="btn btn-ghost" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#wa"/></svg>Hablar con nosotros</a>
 </div></div>
 <div class="stage in" style="--d:.25s">
-<div class="arch"><img src="./ck-remera-negra-emblema.webp" alt="Remera negra Calvin Klein con emblema azul" width="1000" height="1250" fetchpriority="high"><span class="ring" aria-hidden="true"></span></div>
-<div class="float"><small>Calvin Klein</small><strong>Remera con emblema azul</strong></div>
+<div class="arch"><img src="./hero-ck-3d.webp" alt="Modelo con remera blanca Calvin Klein en un set editorial" width="1280" height="1600" fetchpriority="high"><span class="ring" aria-hidden="true"></span></div>
+<div class="float"><small>Calvin Klein</small><strong>Remera blanca</strong></div>
 </div>
 </div></section>
 
@@ -200,6 +222,8 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--steel);f
 <div class="empty" id="empty" hidden><strong>Esta selección sigue creciendo.</strong><span>Preguntanos por otras marcas o categorías.</span><br><a href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer">Consultar disponibilidad</a></div>
 </div></section>
 
+<section class="sec" id="looks" aria-labelledby="lk"><div class="wrap"><div class="head"><h2 id="lk">Looks listos<br>para salir.</h2><p>Combinaciones armadas. Sumá el look completo a tu pedido y elegí tus talles.</p></div><div class="looks" id="looks"></div></div></section>
+
 <section class="state" id="sobre"><div class="wrap"><h2>Tu estilo.<br>Tus reglas.</h2><p>Básicos y accesorios que suman carácter a cada día. Elegí, combiná y repetí.</p></div></section>
 
 <section class="sec" id="contacto" aria-labelledby="cn"><div class="wrap"><div class="panel">
@@ -213,38 +237,39 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--steel);f
 
 <a class="fab" href="https://wa.me/595971813022" target="_blank" rel="noopener noreferrer" aria-label="Escribir ahora por WhatsApp"><svg class="ico" aria-hidden="true"><use href="#wa"/></svg>Escribinos</a>
 
-<dialog id="lb" aria-label="Foto ampliada"><img alt=""></dialog>
+<dialog id="qv" aria-label="Detalle de la prenda"></dialog>
+<dialog id="cart" aria-label="Mi pedido"></dialog>
+<button class="cartb" id="cartb" type="button" hidden>Mi pedido<b>0</b></button>
 <script>
 (()=>{
-const WA='https://wa.me/595971813022';
+const WA='https://wa.me/595971813022',F=n=>n.toLocaleString('de-DE'),I=f=>`./${f}.webp`,$=id=>document.getElementById(id);
+const CK='Calvin Klein',OK='Oakley',PO='Paraguay Outlet',SZ=['S','M','L','XL','XXL'];
 const P=[
-["remeras","Calvin Klein","Remera","Remera negra con emblema azul","249.000","ck-remera-negra-emblema.webp","Remera negra Calvin Klein con emblema azul en el pecho","Emblema azul",0,1000,1250,"camiseta negra"],
-["remeras","Calvin Klein","Remera","Remera verde salvia","239.000","ck-remera-verde-salvia.webp","Remera verde salvia Calvin Klein lisa","Verde salvia",0,1000,1250,"camiseta verde"],
-["remeras","Calvin Klein","Remera","Remera blanca Varsity","245.000","ck-remera-varsity.webp","Remera blanca Calvin Klein con letras varsity azules","Varsity",0,1000,1250,"camiseta blanca"],
-["remeras","Oakley","Remera","Remera azul eléctrico","235.000","oakley-remera-azul.webp","Remera azul eléctrico Oakley con logo central","Azul eléctrico",0,1000,1250,"camiseta celeste"],
-["camperas","Oakley","Campera","Campera plumón liviano","389.000","oakley-campera-plumon.webp","Campera plumón color crema Oakley","Plumón liviano",0,1000,1250,"abrigo chaqueta"],
-["shorts","Paraguay Outlet","Boardshort","Boardshort azul estampado","249.000","boardshort-azul-estampado.webp","Boardshort azul con estampado de hojas y vivos blancos","Estampado",0,1000,1250,"short bañador malla"],
-["shorts","Paraguay Outlet","Boardshort","Boardshort verde estampado","249.000","boardshort-verde-estampado.webp","Boardshort verde agua con estampado geométrico","Estampado",0,1000,1250,"short bañador malla"],
-["shorts","Oakley","Short","Short amarillo de baño","245.000","oakley-short-amarillo.webp","Short amarillo Oakley con cordón negro","Verano",0,1000,1250,"bañador malla"],
-["remeras","Calvin Klein","Remera","Remera blanca monograma CK","239.000","ck-remera-monograma.webp","Remera blanca Calvin Klein con monograma CK","Monograma CK",0,1000,1250,"camiseta blanca"],
-["remeras","Calvin Klein","Remera","Remera blanca monograma mini","239.000","ck-remera-monograma-mini.webp","Remera blanca Calvin Klein con monograma pequeño","Minimal",0,1000,1250,"camiseta blanca"],
-["remeras","Calvin Klein","Remera","Remera blanca logo clásico","245.000","ck-remera-wordmark.webp","Remera blanca con el nombre Calvin Klein al centro","Logo clásico",0,1000,1250,"camiseta blanca"],
-["remeras","Calvin Klein","Remera","Remera blanca box logo","247.000","ck-remera-box-logo.webp","Remera blanca Calvin Klein con recuadro azul","Box logo",0,1000,1250,"camiseta blanca"],
-["remeras","Calvin Klein","Remera","Remera blanca New York","245.000","ck-remera-new-york.webp","Remera blanca Calvin Klein New York con logo pequeño","New York",0,1000,1250,"camiseta blanca"],
-["remeras","Calvin Klein","Remera","Remera blanca vivos negros","249.000","ck-remera-vivos-negros.webp","Remera blanca Calvin Klein con vivos negros en los hombros","Vivos negros",0,1000,1250,"camiseta blanca"],
-["remeras","Paraguay Outlet","Remera","Remera terracota","235.000","remera-terracota.webp","Remera color terracota con detalle pequeño en el pecho","Terracota",0,1000,1250,"camiseta naranja roja"],
-["remeras","Paraguay Outlet","Remera","Remera amarillo pastel","238.000","remera-amarillo-pastel.webp","Remera amarillo pastel con la frase Be like you","Amarillo pastel",0,1000,1250,"camiseta frase"],
-["remeras","Paraguay Outlet","Remera","Remera amarillo vivo","238.000","remera-amarillo-vivo.webp","Remera amarillo vivo con la frase Be like you","Amarillo vivo",0,1000,1250,"camiseta frase"]];
+["remeras",CK,"Remera","Remera negra con emblema azul",247000,["ck-remera-negra-emblema","ck-remera-negra-emblema-xxl"],"Remera negra Calvin Klein con emblema azul en el pecho","Emblema azul","camiseta negra"],
+["remeras",CK,"Remera","Remera verde salvia",239000,["ck-remera-verde-salvia","ck-remera-verde-salvia-xl"],"Remera verde salvia Calvin Klein lisa","Verde salvia","camiseta verde"],
+["remeras",CK,"Remera","Remera blanca Varsity",245000,["ck-remera-varsity"],"Remera blanca Calvin Klein con letras varsity azules","Varsity","camiseta blanca"],
+["remeras",OK,"Remera","Remera azul eléctrico",235000,["oakley-remera-azul"],"Remera azul eléctrico Oakley con logo central","Azul eléctrico","camiseta celeste"],
+["camperas",OK,"Campera","Campera plumón liviano",247000,["oakley-campera-plumon"],"Campera plumón color crema Oakley","Plumón liviano","abrigo chaqueta"],
+["shorts",PO,"Boardshort","Boardshort azul estampado",245000,["boardshort-azul-estampado"],"Boardshort azul con estampado de hojas y vivos blancos","Estampado","short bañador malla"],
+["shorts",PO,"Boardshort","Boardshort verde estampado",245000,["boardshort-verde-estampado"],"Boardshort verde agua con estampado geométrico","Estampado","short bañador malla"],
+["shorts",OK,"Short","Short amarillo de baño",240000,["oakley-short-amarillo"],"Short amarillo Oakley con cordón negro","Verano","bañador malla"],
+["remeras",CK,"Remera","Remera blanca monograma CK",237000,["ck-remera-monograma"],"Remera blanca Calvin Klein con monograma CK","Monograma CK","camiseta blanca"],
+["remeras",CK,"Remera","Remera blanca monograma mini",235000,["ck-remera-monograma-mini"],"Remera blanca Calvin Klein con monograma pequeño","Minimal","camiseta blanca"],
+["remeras",CK,"Remera","Remera blanca logo clásico",242000,["ck-remera-wordmark"],"Remera blanca con el nombre Calvin Klein al centro","Logo clásico","camiseta blanca"],
+["remeras",CK,"Remera","Remera blanca box logo",247000,["ck-remera-box-logo"],"Remera blanca Calvin Klein con recuadro azul","Box logo","camiseta blanca"],
+["remeras",CK,"Remera","Remera blanca New York",243000,["ck-remera-new-york"],"Remera blanca Calvin Klein New York con logo pequeño","New York","camiseta blanca"],
+["remeras",CK,"Remera","Remera blanca vivos negros",247000,["ck-remera-vivos-negros"],"Remera blanca Calvin Klein con vivos negros en los hombros","Vivos negros","camiseta blanca"],
+["remeras",PO,"Remera","Remera terracota",230000,["remera-terracota"],"Remera color terracota con detalle pequeño en el pecho","Terracota","camiseta naranja roja"],
+["remeras",PO,"Remera","Remera Be like you (2 colores)",238000,["remera-amarillo-pastel","remera-amarillo-vivo"],"Remera amarilla con la frase Be like you","Amarillo","camiseta frase pastel vivo"]];
+const LOOKS=[["Playa y sol","Azul eléctrico y amarillo vivo para días de verano.",[3,7]],["Verde y blanco","Un look fresco, claro y fácil de combinar.",[2,6]],["Noche fresca","Remera negra y campera liviana para salir.",[0,4]]];
 const CATS=[["all","Todo"],["remeras","Remeras"],["shorts","Shorts"],["camperas","Camperas"]];
-const BRS=[["all","Todas"],["Calvin Klein","Calvin Klein"],["Oakley","Oakley"],["Paraguay Outlet","Otras marcas"]];
-const $=id=>document.getElementById(id);
-const grid=$('grid'),cats=$('cats'),brs=$('brs'),q=$('q'),count=$('count'),empty=$('empty');
-let ac='all',ab='all';
-const word=['LACOSTE','TOMMY HILFIGER','Calvin Klein','POLO RALPH LAUREN','ABERCROMBIE & FITCH','Y MÁS'];
+const BRS=[["all","Todas"],[CK,CK],[OK,OK],[PO,"Otras marcas"]];
+const grid=$('grid'),cats=$('cats'),brs=$('brs'),q=$('q'),count=$('count'),empty=$('empty'),qv=$('qv'),cd=$('cart'),cartb=$('cartb');
+let ac='all',ab='all',cart=[];
+try{cart=JSON.parse(localStorage.getItem('po-cart')||'[]').filter(x=>P[x.i])}catch(e){}
+const word=['LACOSTE','TOMMY HILFIGER','Calvin Klein','OAKLEY','POLO RALPH LAUREN','Y MÁS'];
 $('track').innerHTML=[...word,...word].map(w=>`<span>${w}</span>`).join('');
-grid.innerHTML=P.map(([c,b,t,n,p,i,a,g,k,w,h,s])=>{
-const msg=encodeURIComponent(`Hola Paraguay Outlet, quiero consultar por ${n} · ${b}. ¿Me comparten talles, colores y disponibilidad?`);
-return `<article class="card" data-c="${c}" data-b="${b}" data-s="${(n+' '+b+' '+t+' '+s).toLowerCase()}"><div class="ph"><img class="${k?'ct':''}" src="./${i}" alt="${a}" loading="lazy" width="${w}" height="${h}"><span class="bd">${g}</span></div><div class="info"><div class="mt"><span>${b}</span><span class="ty">${t}</span></div><h3>${n}</h3><div class="bt"><div><small>Precio de muestra</small><strong>Gs. ${p}</strong></div><a class="ask" href="${WA}?text=${msg}" target="_blank" rel="noopener noreferrer" aria-label="Consultar por ${n} en WhatsApp"><svg class="ico" aria-hidden="true"><use href="#go"/></svg></a></div></div></article>`}).join('');
+grid.innerHTML=P.map(([c,b,t,n,p,im,a,g,s],i)=>`<article class="card" data-i="${i}" data-c="${c}" data-b="${b}" data-s="${(n+' '+b+' '+t+' '+s).toLowerCase()}"><div class="ph"><img src="${I(im[0])}" alt="${a}" loading="lazy" width="1000" height="1250"><span class="bd">${g}</span>${im.length>1?`<span class="mf">${im.length} fotos</span>`:''}</div><div class="info"><div class="mt"><span>${b}</span><span class="ty">${t}</span></div><h3>${n}</h3><div class="bt"><div><small>Precio de muestra</small><strong>Gs. ${F(p)}</strong></div><button class="ask" type="button" aria-label="Ver ${n} y elegir talle"><svg class="ico" aria-hidden="true"><use href="#go"/></svg></button></div></div></article>`).join('');
 const cards=[...grid.children];
 function chips(box,list,set){
 box.innerHTML=list.map(([v,l],i)=>`<button class="chip${i?'':' on'}" type="button" data-v="${v}" aria-pressed="${!i}">${l}</button>`).join('');
@@ -263,9 +288,33 @@ const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.to
 c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');
 c.style.transform=`perspective(900px) rotateX(${(.5-y)*5}deg) rotateY(${(x-.5)*7}deg) translateY(-4px)`});
 grid.addEventListener('pointerout',e=>{const c=e.target.closest('.card');if(c)c.style.transform=''})}
-const lb=$('lb'),li=lb.querySelector('img');
-grid.addEventListener('click',e=>{const m=e.target.closest('.ph img');if(!m)return;li.src=m.src;li.alt=m.alt;lb.showModal()});
-lb.addEventListener('click',()=>lb.close());
+/* pedido */
+function upd(){try{localStorage.setItem('po-cart',JSON.stringify(cart))}catch(e){}
+const n=cart.reduce((a,x)=>a+x.q,0);cartb.hidden=!n;cartb.querySelector('b').textContent=n;if(cd.open)drawCart()}
+function add(i,sz){const x=cart.find(y=>y.i===i&&y.sz===sz);x?x.q++:cart.push({i,sz,q:1});upd()}
+function drawCart(){
+const tot=cart.reduce((a,x)=>a+P[x.i][4]*x.q,0);
+const msg='Hola Paraguay Outlet, quiero hacer este pedido:\n'+cart.map(x=>{const p=P[x.i];return `• ${x.q}× ${p[3]} (${p[1]}) — ${x.sz?'talle '+x.sz:'talle a confirmar'}`}).join('\n')+`\nTotal estimado: Gs. ${F(tot)}\n¿Me confirman disponibilidad y envío?`;
+cd.innerHTML=`<div class="cw"><div class="cwh"><h3>Mi pedido</h3><button class="x" data-x type="button" aria-label="Cerrar">×</button></div>`+(cart.length?cart.map((x,k)=>{const p=P[x.i];return `<div class="ci"><img src="${I(p[5][0])}" alt=""><div><strong>${p[3]}</strong><small>${p[1]} · Gs. ${F(p[4])}</small><div class="cr"><select data-k="${k}" aria-label="Talle">${['',...SZ].map(s=>`<option value="${s}"${s===x.sz?' selected':''}>${s||'Talle a confirmar'}</option>`).join('')}</select><span class="qt"><button data-m="${k}" type="button" aria-label="Menos">−</button>${x.q}<button data-p="${k}" type="button" aria-label="Más">+</button></span></div></div></div>`}).join('')+`<div class="tt"><span>Total estimado (precios de muestra)</span><strong>Gs. ${F(tot)}</strong></div><a class="btn btn-wa" target="_blank" rel="noopener noreferrer" href="${WA}?text=${encodeURIComponent(msg)}">Enviar pedido por WhatsApp</a>`:`<p class="e0">Todavía no agregaste prendas.</p>`)+`</div>`}
+cartb.onclick=()=>{drawCart();cd.showModal()};
+cd.onclick=e=>{const t=e.target;if(t===cd||t.closest('[data-x]'))return cd.close();
+const m=t.closest('[data-m]'),p=t.closest('[data-p]');
+if(m){const x=cart[m.dataset.m];if(--x.q<1)cart.splice(m.dataset.m,1);upd()}
+if(p){cart[p.dataset.p].q++;upd()}};
+cd.onchange=e=>{const k=e.target.dataset.k;if(k!=null){cart[k].sz=e.target.value;upd()}};
+/* vista rápida */
+function openQV(i){const p=P[i];let sz='';
+qv.innerHTML=`<div class="qw"><button class="x" data-x type="button" aria-label="Cerrar">×</button><div class="gal"><img id="qm" src="${I(p[5][0])}" alt="${p[6]}">${p[5].length>1?`<div class="th">${p[5].map((f,k)=>`<button type="button" data-t="${k}" class="${k?'':'on'}" aria-label="Ver foto ${k+1}"><img src="${I(f)}" alt=""></button>`).join('')}</div>`:''}</div><div class="qi"><small>${p[1]} · ${p[2]}</small><h3>${p[3]}</h3><strong class="pr">Gs. ${F(p[4])}</strong><span class="fl">Talle</span><div class="chips">${SZ.map(s=>`<button class="chip" type="button" data-z="${s}" aria-pressed="false">${s}</button>`).join('')}</div><details><summary>¿Qué talle elijo?</summary><p>Si dudás entre dos talles, escribinos tu altura y peso y te recomendamos el mejor. Confirmamos el talle disponible por WhatsApp.</p></details><button class="btn btn-wa" data-a type="button">Agregar al pedido</button><a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${WA}?text=${encodeURIComponent(`Hola Paraguay Outlet, quiero consultar por ${p[3]} · ${p[1]}. ¿Me comparten talles, colores y disponibilidad?`)}">Consultar por WhatsApp</a><small class="ok" id="ok" aria-live="polite"></small></div></div>`;
+qv.onclick=e=>{const t=e.target;if(t===qv||t.closest('[data-x]'))return qv.close();
+const th=t.closest('[data-t]');if(th){$('qm').src=I(p[5][th.dataset.t]);qv.querySelectorAll('[data-t]').forEach(b=>b.classList.toggle('on',b===th))}
+const z=t.closest('[data-z]');if(z){sz=sz===z.dataset.z?'':z.dataset.z;qv.querySelectorAll('[data-z]').forEach(b=>{const o=b.dataset.z===sz;b.classList.toggle('on',o);b.setAttribute('aria-pressed',o)})}
+if(t.closest('[data-a]')){add(i,sz);$('ok').textContent=sz?`Agregado en talle ${sz}.`:'Agregado. Confirmamos el talle por WhatsApp.'}};
+qv.showModal()}
+grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c&&e.target.closest('.ph,h3,.ask'))openQV(+c.dataset.i)});
+/* looks */
+$('looks').innerHTML=LOOKS.map(([t,d,ids],k)=>`<article class="look"><div class="lp">${ids.map(i=>`<img src="${I(P[i][5][0])}" alt="${P[i][6]}" loading="lazy" width="1000" height="1250">`).join('')}</div><div class="li"><h3>${t}</h3><p>${d}</p><div class="lt"><span>Look completo<br><strong>Gs. ${F(ids.reduce((a,i)=>a+P[i][4],0))}</strong></span><button class="btn btn-wa" data-l="${k}" type="button">Agregar al pedido</button></div></div></article>`).join('');
+$('looks').addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;LOOKS[b.dataset.l][2].forEach(i=>add(i,''));b.textContent='Agregado';setTimeout(()=>b.textContent='Agregar al pedido',1600)});
+upd();
 const bg=$('burger'),nav=$('links');
 const close=()=>{nav.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.setAttribute('aria-label','Abrir menú')};
 bg.addEventListener('click',()=>{const o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú')});
